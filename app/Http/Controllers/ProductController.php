@@ -20,7 +20,7 @@ class ProductController extends Controller
             'ean_13' => 'required|unique:App\Models\Product|min:1',
             'title' => 'required|min:1',
             'stock' => 'required|min:0',
-            'cost' => 'required|integer|min:0',
+            'cost' => 'required|min:0',
         ]);
 
         $product = new Product();
